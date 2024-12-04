@@ -10,23 +10,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="./bootstrap.css">
 </head>
 
+
 <body>
-    <div>
-        <header>
-            <a href="" class="logo">
-                <img src="./assets/logo.png" alt="">
-            </a>
-            <nav>
-                <a href="">About us</a>
-                <a href="">Services</a>
-                <a href="">Usecases</a>
-                <a href="">Pricing</a>
-                <a href="">Blog</a>
-                <button>Request a quote</button>
-            </nav>
-        </header>
+    <main class="">
+        <div class="container d-flex flex-column gap-4">
+            <header class="d-flex justify-content-between align-items-center py-3">
+                <div tabindex="1">
+                    <img class="logo" aria-label="website logo" src="./assets/logo.png" alt="logo">
+                </div>
+                <nav class="d-none d-lg-block">
+                    <div class="d-flex column-gap-4">
+                        <a href="" class="text-decoration-none text-black">About us</a>
+                        <a href="" class="text-decoration-none text-black">Services</a>
+                        <a href="" class="text-decoration-none text-black" aria-label="use cases">Usecases</a>
+                        <a href="" class="text-decoration-none text-black">Pricing</a>
+                        <a href="" class="text-decoration-none text-black">Blog</a>
+                    </div>
+                </nav>
+                <div class="d-none d-lg-block">
+                    <button class="bg-transparent border border-black rounded px-3 py-2">Request a quote</button>
+                </div>
+                <button class="border-0 bg-transparent d-block d-lg-none">
+                    <i class="fa-solid fs-1 fa-bars"></i>
+                </button>
+            </header>
+            <section class="hero-section row flex-md-row flex-column-reverse">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="d-flex d-sm-block flex-column align-items-center text-md-start text-center">
+                        <h1 class="">Navigating the <br> digital landscape <br> for success</h1>
+                        <p class="w-sm-75">Our digital marketing agency helps businesses grow and succeed online through a
+                            range of services
+                            including SEO, PPC, social media marketing, and content creation.</p>
+                        <button class="primary-btn">Book a consultation</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 d-flex justify-content-end align-items-start">
+                    <img class="hero-img" src="./assets/Hero.svg" alt="Hero">
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

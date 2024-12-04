@@ -1,17 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    --green: #B9FF66;
+    --black: #191A23;
+    --white: #F3F3F3;
 }
 
-body,
-html {
-    width: 100%;
-    height: 100%;
+@font-face {
+    font-family: "regular";
+    src: url("./assets/fonts/static/SpaceGrotesk-Regular.ttf");
 }
 
-/* Header styling */
-header {
-    
+@font-face {
+    font-family: "bold";
+    src: url("./assets/fonts/static/SpaceGrotesk-Bold.ttf");
 }
 
-/* END */
+.logo {
+    width: 120px;
+}
+
+* :not(i) {
+    font-family: regular !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: bold !important;
+}
+
+.hero-section {
+    /* max-height: 500px !important; */
+}
+
+section {
+    margin-top: 40px !important;
+}
+
+.primary-btn {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+}
+
+.hero-img {
+    width: 90%;
+    height: 90%;
+}
+
+@media only screen and (max-width:768px) {
+    .logo {
+        width: 150px;
+    }
+}
