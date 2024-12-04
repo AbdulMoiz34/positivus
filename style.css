@@ -30,14 +30,6 @@ h5 {
     font-family: bold !important;
 }
 
-.hero-section {
-    /* max-height: 500px !important; */
-}
-
-section {
-    margin-top: 40px !important;
-}
-
 .primary-btn {
     background-color: var(--black);
     color: var(--white);
@@ -52,8 +44,26 @@ section {
     height: 90%;
 }
 
+.branding>div>div>img {
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
 @media only screen and (max-width:768px) {
     .logo {
         width: 150px;
+    }
+
+    .primary-btn {
+        padding: 14px 18px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .branding>div>div>img {
+        width: 80px;
     }
 }
