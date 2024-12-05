@@ -22,6 +22,11 @@
     font-family: regular !important;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -70,15 +75,6 @@ h5 {
     height: 300px;
     border-radius: 45px;
     box-shadow: 0 5px 0 var(--black);
-
-    /* flex: 5;
-    border-radius: 8px;
-    padding: 15px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;*/
 }
 
 .services-row .service-cols-inner {
@@ -207,15 +203,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
     border-radius: 45px 45px 0 0;
+    overflow: hidden;
+    padding: 4%;
 }
 
 footer>div {
     width: 90%;
     height: 80%;
     /* background-color: blue; */
-    color: #fff;
+    color: var(--white);
 }
 
 footer a {
@@ -232,7 +229,7 @@ footer a {
     justify-content: space-between;
     gap: 10%;
     align-items: center;
-
+    border-bottom: 1px solid var(--white);
 }
 
 .footer-contact>div:first-child {
@@ -256,12 +253,13 @@ footer a {
 
 .footer-form {
     background-color: #3e404e;
-    display: flex;
     gap: 4%;
     height: 150px;
     border-radius: 12px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2%;
 }
 
 .footer-form>input,
@@ -287,10 +285,18 @@ footer a {
     border-radius: 8px;
 }
 
+.custom-inp:focus {
+    outline: none !important;
+
+    /* border: 2px solid var(--green) !important;
+    outline: none !important; */
+}
+
 @media only screen and (max-width:992px) {
     .services-row>div {
         width: 100%;
     }
+
 
 }
 
@@ -310,6 +316,14 @@ footer a {
     .form-img {
         display: none;
     }
+
+    .footer-form {
+        padding: 10%;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 12px;
+    }
+
 }
 
 @media only screen and (max-width:576px) {
@@ -328,4 +342,18 @@ footer a {
     .my-accordion-item {
         padding: 7%;
     }
+
+    /* footer styling */
+    footer {
+        border-radius: 0px !important;
+        width: 100vw;
+        padding: 7% 15px;
+        height: min-content;
+    }
+
+    footer a {
+        color: var(--white);
+        text-decoration: none;
+    }
+
 }
