@@ -52,6 +52,88 @@ h5 {
     }
 }
 
+.primary-heading {
+    background-color: var(--green);
+}
+
+.services-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.services-row .service-cols {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 45px;
+    box-shadow: 0 5px 0 var(--black);
+
+    /* flex: 5;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;*/
+}
+
+.services-row .service-cols-inner {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    justify-content: space-between;
+
+    &>img {
+        position: absolute;
+        top: 17%;
+        right: -4%;
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.services-row>div:first-child {
+    background-color: var(--white);
+    margin-bottom: 13px;
+
+}
+
+.service-cols-inner a {
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+.service-cols-inner i {
+    background-color: var(--black);
+    color: var(--green);
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 15px;
+    margin-right: 7px;
+    box-sizing: border-box;
+    transform: rotate(320deg);
+}
+
+.services-row>div:nth-child(2) {
+    background-color: var(--green);
+}
+
+@media only screen and (max-width:992px) {
+    .services-row>div {
+        width: 100%;
+    }
+
+}
+
 @media only screen and (max-width:768px) {
     .logo {
         width: 150px;
@@ -60,10 +142,22 @@ h5 {
     .primary-btn {
         padding: 14px 18px;
     }
+
+    .services-row {
+        display: block;
+    }
 }
 
 @media only screen and (max-width:576px) {
     .branding>div>div>img {
         width: 80px;
+    }
+
+    .primary-heading {
+        font-size: 20px;
+    }
+
+    .services-row>div:first-child {
+        margin-bottom: 8%;
     }
 }

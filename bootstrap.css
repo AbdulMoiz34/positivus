@@ -807,6 +807,8 @@ progress {
     .container-sm {
         max-width: 740px
     }
+
+
 }
 
 @media (min-width:992px) {
@@ -816,6 +818,10 @@ progress {
     .container-md,
     .container-sm {
         max-width: 960px
+    }
+
+    .w-md-50 {
+        width: 50%
     }
 }
 
@@ -1523,7 +1529,7 @@ progress {
 
     .row-cols-lg-2>* {
         flex: 0 0 auto;
-        width: 50%
+        width: 49%
     }
 
     .row-cols-lg-3>* {
