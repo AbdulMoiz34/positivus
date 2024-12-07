@@ -43,7 +43,7 @@ body {
 }
 
 #nav a:hover {
-text-decoration: underline !important;
+    text-decoration: underline !important;
 }
 
 h1,
@@ -153,9 +153,6 @@ h5 {
 
 
 /* Accordian */
-
-.my-accordion {}
-
 .my-accordion-item {
     background-color: var(--white);
     padding: 3% 2%;
@@ -174,7 +171,7 @@ h5 {
     background-color: var(--white) !important;
 }
 
-.my-accordian-toggle-btn {
+.my-accordion-toggle-btn {
     border: 2px solid var(--black);
     border-radius: 50%;
     width: 35px;
@@ -241,7 +238,6 @@ h5 {
 }
 
 /* footer */
-
 footer {
     margin-top: 7%;
     background-color: var(--black);
@@ -256,7 +252,6 @@ footer {
 footer>div {
     width: 90%;
     height: 80%;
-    /* background-color: blue; */
     color: var(--white);
 }
 
@@ -278,7 +273,6 @@ footer a {
 }
 
 .footer-contact>div:first-child {
-    /* background-color: blue; */
     flex: 40;
 }
 
@@ -342,9 +336,6 @@ footer a {
 
 .custom-inp:focus {
     outline: none !important;
-
-    /* border: 2px solid var(--green) !important;
-    outline: none !important; */
 }
 
 @media only screen and (max-width:992px) {

@@ -73,7 +73,6 @@ const headerAnim = () => {
 }
 
 // branding images animations
-
 const brandingImagesAnim = () => {
     gsap.from(".branding-wrapper>div", {
         opacity: 0,
@@ -82,10 +81,10 @@ const brandingImagesAnim = () => {
         stagger: 0.2,
         ease: "power3.out",
         scrollTrigger: {
-            trigger: ".branding-wrapper>div",  // Element to trigger the animation
+            trigger: ".branding-wrapper>div",
             scroller: "body",
-            start: "top 80%",  // When the top of the box reaches 80% of the viewport
-            end: "top 30%",    // When the top of the box reaches 30% of the viewport
+            start: "top 80%",
+            end: "top 30%",
         }
     });
 }
@@ -209,7 +208,7 @@ serviceLinksArrowAnim();
 const navOpenBtn = document.querySelector(".nav-expanded-icon");
 const navCloseBtn = document.querySelector(".nav-closed-icon");
 const navBar = document.querySelector("nav");
-navOpenBtn.addEventListener("click", () => {
+const openNavBar = () => {
     const tl = gsap.timeline();
     tl.to(navBar, {
         right: "0%",
@@ -226,12 +225,13 @@ navOpenBtn.addEventListener("click", () => {
     tl.from(navCloseBtn, {
         opacity: 0
     }, "-=.4");
-});
-
-navCloseBtn.addEventListener("click", () => {
+}
+navOpenBtn.addEventListener("click", openNavBar);
+const closeNavBar = () => {
     const tl = gsap.timeline();
     tl.to(navBar, {
         right: "-100%",
         duration: .4,
     });
-});
+}
+navCloseBtn.addEventListener("click", closeNavBar);
