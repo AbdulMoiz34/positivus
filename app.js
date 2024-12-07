@@ -64,6 +64,12 @@ const headerAnim = () => {
         duration: .3,
         stagger: 0.2,
     });
+    tl.to(".hero-img", {
+        duration: 1,
+        scale: .9,
+        repeat: -1,
+        yoyo: true
+    })
 }
 
 // branding images animations
@@ -197,3 +203,7 @@ servicesAnim();
 workingProcessAnim();
 contactFormAnim();
 serviceLinksArrowAnim();
+
+// gsap.from(".hero-img", {
+//     opacity: 0,
+// })
