@@ -203,3 +203,35 @@ servicesAnim();
 workingProcessAnim();
 contactFormAnim();
 serviceLinksArrowAnim();
+
+
+
+const navOpenBtn = document.querySelector(".nav-expanded-icon");
+const navCloseBtn = document.querySelector(".nav-closed-icon");
+const navBar = document.querySelector("nav");
+navOpenBtn.addEventListener("click", () => {
+    const tl = gsap.timeline();
+    tl.to(navBar, {
+        right: "0%",
+        duration: .6,
+        ease: "power1.out",
+    });
+    tl.from("#nav a", {
+        opacity: 0,
+        x: 40,
+        y: -10,
+        stagger: 0.4,
+        duration: .4,
+    });
+    tl.from(navCloseBtn, {
+        opacity: 0
+    }, "-=.4");
+});
+
+navCloseBtn.addEventListener("click", () => {
+    const tl = gsap.timeline();
+    tl.to(navBar, {
+        right: "-100%",
+        duration: .4,
+    });
+});

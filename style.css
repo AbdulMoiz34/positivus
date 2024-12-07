@@ -42,6 +42,10 @@ body {
     background-color: rgb(56, 56, 56);
 }
 
+#nav a:hover {
+text-decoration: underline !important;
+}
+
 h1,
 h2,
 h3,
@@ -348,6 +352,35 @@ footer a {
         width: 100%;
     }
 
+    #nav {
+        background-color: rgba(245, 245, 245, 0.756) !important;
+        display: block !important;
+        width: 50%;
+        height: 100%;
+        position: fixed !important;
+        top: 0;
+        z-index: 5;
+        right: -50%;
+        padding: 10vw;
+        box-sizing: border-box;
+        backdrop-filter: blur(5px);
+    }
+
+    #nav>div {
+        flex-direction: column;
+        gap: 4vh;
+        margin-top: 30px;
+    }
+
+    #nav .nav-closed-icon {
+        display: block !important;
+        border: none;
+        font-size: 34px;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        right: 33px;
+    }
 
 }
 
@@ -424,4 +457,8 @@ footer a {
         text-decoration: none;
     }
 
+    #nav {
+        width: 100%;
+        right: -100%;
+    }
 }

@@ -25,7 +25,10 @@
         <div tabindex="1">
           <img class="logo" aria-label="website logo" src="./assets/logo.png" alt="logo" />
         </div>
-        <nav class="d-none d-lg-block">
+        <nav class="d-none d-lg-block" id="nav">
+          <button aria-label="close navbar" class="nav-closed-icon d-none">
+            <i class="fas fa-xmark"></i>
+          </button>
           <div class="d-flex column-gap-4">
             <a href="" class="text-decoration-none text-black">About us</a>
             <a href="#services" class="text-decoration-none text-black">Services</a>
@@ -39,7 +42,7 @@
             Request a quote
           </button>
         </div>
-        <button aria-label="open navbar" class="border-0 bg-transparent d-block d-lg-none">
+        <button aria-label="open navbar" class="nav-expanded-icon border-0 bg-transparent d-block d-lg-none">
           <i class="fa-solid fs-1 fa-bars"></i>
         </button>
       </header>
