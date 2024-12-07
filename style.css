@@ -152,7 +152,7 @@ h5 {
 }
 
 
-/* Accordian */
+/* accordion */
 .my-accordion-item {
     background-color: var(--white);
     padding: 3% 2%;
@@ -167,7 +167,7 @@ h5 {
 
 }
 
-.my-accordion-item.active .my-accordian-toggle-btn:hover {
+.my-accordion-item.active .my-accordion-toggle-btn:hover {
     background-color: var(--white) !important;
 }
 
