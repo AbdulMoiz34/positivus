@@ -203,7 +203,3 @@ servicesAnim();
 workingProcessAnim();
 contactFormAnim();
 serviceLinksArrowAnim();
-
-// gsap.from(".hero-img", {
-//     opacity: 0,
-// })
